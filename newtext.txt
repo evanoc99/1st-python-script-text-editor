@@ -1,0 +1,321 @@
+//-------------------------------------
+//Script Created: Jan 27, 2016
+//
+// Description: Generates Off and Invalid States for Direction Exit Signs
+//              Off - The Upstream and Downstream Inputs are Both OFF 
+//              Invalid - The Upstream and Downstream Inputs are Both ON
+//-------------------------------------
+
+int a = 0;
+int b = 1;
+
+// DESE01
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE01_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE01_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE01_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE01_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE01_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE01_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE01_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE01_CTRL_INVALD.write(a);
+
+
+// DESE02
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE02_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE02_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE02_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE02_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE02_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE02_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE02_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE02_CTRL_INVALD.write(a);
+
+
+// DESE03
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE03_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE03_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE03_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE03_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE03_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE03_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE03_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE03_CTRL_INVALD.write(a);
+
+
+// DESE04
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE04_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE04_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE04_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE04_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE04_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE04_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE04_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE04_CTRL_INVALD.write(a);
+
+
+// DESE05
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE05_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE05_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE05_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE05_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE05_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE05_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE05_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE05_CTRL_INVALD.write(a);
+
+
+// DESE06
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE06_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE06_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE06_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE06_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE06_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE06_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE06_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE06_CTRL_INVALD.write(a);
+
+
+// DESE07
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE07_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE07_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE07_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE07_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE07_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE07_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE07_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE07_CTRL_INVALD.write(a);
+
+
+// DESE08
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE08_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE08_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE08_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE08_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE08_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE08_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE08_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE08_CTRL_INVALD.write(a);
+
+
+// DESE09
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE09_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE09_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE09_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE09_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE09_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE09_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE09_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE09_CTRL_INVALD.write(a);
+
+
+// DESE10
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE10_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE10_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE10_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE10_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE10_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE10_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE10_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE10_CTRL_INVALD.write(a);
+
+
+// DESE11
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE11_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE11_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE11_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE11_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE11_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE11_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE11_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE11_CTRL_INVALD.write(a);
+
+
+// DESE12
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE12_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE12_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE12_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE12_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE12_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE12_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE12_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE12_CTRL_INVALD.write(a);
+
+
+// DESE13
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE13_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE13_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE13_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE13_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE13_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE13_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE13_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE13_CTRL_INVALD.write(a);
+
+
+// DESE14
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE14_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE14_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE14_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE14_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE14_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE14_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE14_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE14_CTRL_INVALD.write(a);
+
+
+// DESE15
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE15_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE15_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE15_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE15_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE15_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE15_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE15_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE15_CTRL_INVALD.write(a);
+
+
+// DESE16
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE16_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESE16_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESE16_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESE16_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESE16_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESE16_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESE16_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESE16_CTRL_INVALD.write(a);
+
+
+// DESEREF3
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESEREF3_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESEREF3_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESEREF3_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESEREF3_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESEREF3_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESEREF3_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESEREF3_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESEREF3_CTRL_INVALD.write(a);
+
+
+// DESW00
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW00_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESW00_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESW00_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESW00_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW00_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESW00_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESW00_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESW00_CTRL_INVALD.write(a);
+
+
+// DESW01
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW01_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESW01_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESW01_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESW01_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW01_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESW01_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESW01_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESW01_CTRL_INVALD.write(a);
+
+
+// DESW02
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW02_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESW02_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESW02_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESW02_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW02_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESW02_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESW02_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESW02_CTRL_INVALD.write(a);
+
+
+// DESW03
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW03_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESW03_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESW03_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESW03_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW03_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESW03_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESW03_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESW03_CTRL_INVALD.write(a);
+
+
+// DESW04
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW04_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESW04_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESW04_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESW04_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW04_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESW04_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESW04_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESW04_CTRL_INVALD.write(a);
+
+
+// DESW05
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW05_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESW05_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESW05_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESW05_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW05_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESW05_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESW05_CTRL_INVALD.write(b);
+else
+PMCS_Sim_PLC.CCCS.Alarms4.DESW05_CTRL_INVALD.write(a);
+
+
+// DESW06
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW06_CTRL_DWSTRM.getIntValue()==0 && PMCS_Sim_PLC.CCCS.Events4.DESW06_CTRL_UPSTRM.getIntValue()==0)
+	PMCS_Sim_PLC.CCCS.Events4.DESW06_CTRL_OFF.write(b);
+else
+PMCS_Sim_PLC.CCCS.Events4.DESW06_CTRL_OFF.write(a);
+
+if (PMCS_Sim_PLC.CCCS.Events4.DESW06_CTRL_DWSTRM.getIntValue()==1 && PMCS_Sim_PLC.CCCS.Events4.DESW06_CTRL_UPSTRM.getIntValue()==1)
+	PMCS_Sim_PLC.CCCS.Alarms4.DESW06_CTRL_INVALD.write(b);else
+PMCS_Sim_PLC.CCCS.Alarms4.DESW06_CTRL_INVALD.write(a);
+
